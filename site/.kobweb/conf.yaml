@@ -1,0 +1,14 @@
+site:
+  title: "Svarka"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/svarka.js"
+      api: "build/libs/svarka.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/svarka.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
